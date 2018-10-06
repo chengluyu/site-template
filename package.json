@@ -1,0 +1,16 @@
+{
+  "name": "site-template",
+  "version": "0.0.0",
+  "repository": "https://github.com/chengluyu/site-template.git",
+  "author": "chengluyu <chengluyu@live.cn>",
+  "license": "MIT",
+  "private": true,
+  "sideEffects": false,
+  "dependencies": {
+    "katex": "^0.10.0-rc.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
