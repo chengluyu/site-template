@@ -1,0 +1,64 @@
+@import 'bulma/sass/utilities/_all.sass';
+@import 'bulma/sass/grid/columns.sass';
+@import 'bulma/sass/elements/tag.sass';
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+
+body {
+  font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+header {
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+
+  .brand {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 20px 20px;
+      transition: color 200ms ease-in-out;
+      transition: background-color 200ms ease-in-out;
+    }
+
+    a:hover {
+      color: white;
+      background-color: #2b2b2b;
+    }
+  }
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0;
+  width: 80%;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Utilties
+
+.post-link {
+  text-decoration: none;
+  color: black;
+}
