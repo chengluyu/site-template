@@ -48,6 +48,12 @@ module.exports = {
       title: 'Post {{post_name}}',
       minify: true
     }),
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: './src/about.html',
+      title: 'About',
+      minify: true
+    }),
     new MiniCssExtractPlugin({
       filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
