@@ -49,12 +49,12 @@ module.exports = {
       minify: true
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css'
+      filename: devMode ? '[name].css' : '[name].[hash].css',
+      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
     })
   ],
   output: {
-    filename: '[name].[hash].js',
+    filename: devMode ? '[name].js' : '[name].[hash].js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
@@ -76,7 +76,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
+              name: devMode ? '[name].[ext]' : '[name].[hash].[ext]',
               outputPath: 'fonts/'
             }
           }
